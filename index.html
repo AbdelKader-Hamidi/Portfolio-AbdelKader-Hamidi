@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+  rel="stylesheet"
+>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="banniere">
+        <img src="img/banniere.png" alt="banniere Abdelkader Hamidi">
+    </div>
+
+    <style>
+        * {
+        box-sizing: border-box;
+        font-family: "Cormorant Garamond", Georgia, serif;
+        }
+
+        html,
+        body {
+        margin: 0;
+        padding: 0;
+        }
+    </style>
+
+    <header class="portfolio-header">
+        <div class="portfolio-header__container">
+
+            <a href="/" class="portfolio-logo">AH</a>
+
+            <nav class="portfolio-nav" id="portfolioNav">
+            <a href="#accueil" class="active">Accueil</a>
+            <a href="logo.html">Projets</a>
+            <a href="#apropos">À propos</a>
+            <a href="#services">Services</a>
+            <a href="#contact-form">Contact</a>
+            </nav>
+
+            <a href="#contact-form" class="portfolio-contact">
+            Me contacter
+            <span></span>
+            </a>
+
+            <button
+            class="portfolio-burger"
+            id="portfolioBurger"
+            aria-label="Ouvrir le menu"
+            aria-expanded="false"
+            >
+            <span></span>
+            <span></span>
+            <span></span>
+            </button>
+
+        </div>
+    </header>
+
+    <section class="portfolio-productions" id="projets">
+  <div class="productions-container">
+
+    <div class="productions-label">
+      Productions
+    </div>
+
+    <div class="productions-header">
+
+      <h2 class="productions-title">
+        Sélection
+        <span>de projets</span>
+      </h2>
+
+      <div class="productions-intro">
+        <p>
+          Un aperçu de mon travail à travers différents territoires
+          créatifs. Chaque projet est une histoire, chaque détail,
+          une intention.
+        </p>
+
+        <div class="productions-chess">♞</div>
+      </div>
+
+    </div>
+
+    <div class="productions-grid">
+
+      <!-- Projet 1 -->
+
+      <article class="production-card">
+
+        <a href="logo.html" class="production-image">
+          <img
+            src="img/Betchu/logo.png"
+            alt="Projet de création de logo"
+          >
+        </a>
+
+        <span class="production-number">01</span>
+
+        <h3 class="production-name">Logo</h3>
+
+        <p class="production-description">
+          Création d’identités visuelles fortes, singulières et mémorables.
+        </p>
+
+        <a href="logo.html" class="production-link">
+          Voir les projets
+          <span class="production-arrow">→</span>
+        </a>
+
+      </article>
+
+      <!-- Projet 2 -->
+
+      <article class="production-card">
+
+        <a href="#" class="production-image">
+          <img
+            src="img/Betchu/vogue.png"
+            alt="Projet de création print"
+          >
+        </a>
+
+        <span class="production-number">02</span>
+
+        <h3 class="production-name">Print</h3>
+
+        <p class="production-description">
+          Affiches, éditions et supports imprimés pensés pour attirer le regard.
+        </p>
+
+        <a href="#" class="production-link">
+          Voir les projets
+          <span class="production-arrow">→</span>
+        </a>
+
+      </article>
+
+      <!-- Projet 3 -->
+
+      <article class="production-card">
+
+        <a href="#" class="production-image">
+          <img
+            src="img/Betchu/site.png"
+            alt="Projet de site e-commerce"
+          >
+        </a>
+
+        <span class="production-number">03</span>
+
+        <h3 class="production-name">
+          Site<br>e-commerce
+        </h3>
+
+        <p class="production-description">
+          Des expériences digitales pensées pour captiver, engager et convertir.
+        </p>
+
+        <a href="#" class="production-link">
+          Voir les projets
+          <span class="production-arrow">→</span>
+        </a>
+
+      </article>
+
+      <!-- Projet 4 -->
+
+      <article class="production-card">
+
+        <a href="#" class="production-image">
+          <img
+            src="img/Betchu/campagne.png"
+            alt="Projet de campagne de communication"
+          >
+        </a>
+
+        <span class="production-number">04</span>
+
+        <h3 class="production-name">
+          Campagne de<br>communication
+        </h3>
+
+        <p class="production-description">
+          Des concepts audacieux, des messages clairs et un impact durable.
+        </p>
+
+        <a href="#" class="production-link">
+          Voir les projets
+          <span class="production-arrow">→</span>
+        </a>
+
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="contact-section" id="contact-form">
+        <div class="contact-section__container">
+
+            <div class="contact-heading">
+            <span class="contact-number">05</span>
+
+            <h2>
+                Parlons de votre
+                <em>prochain projet.</em>
+            </h2>
+
+            <p>
+                Une idée, une collaboration ou un projet à construire ?
+                Écrivez-moi et donnons-lui une direction.
+            </p>
+            </div>
+
+            <form
+            class="contact-form"
+            action="https://formspree.io/f/TON_IDENTIFIANT"
+            method="POST"
+            >
+
+            <div class="contact-form__row">
+
+                <div class="contact-field">
+                <label for="name">Votre nom</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Abdelkader Hamidi"
+                    required
+                >
+                </div>
+
+                <div class="contact-field">
+                <label for="email">Votre adresse e-mail</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="bonjour@email.com"
+                    required
+                >
+                </div>
+
+            </div>
+
+            <div class="contact-form__row">
+
+                <div class="contact-field">
+                <label for="project">Type de projet</label>
+
+                <select id="project" name="project" required>
+                    <option value="" disabled selected>
+                    Sélectionnez un projet
+                    </option>
+
+                    <option value="identite-visuelle">
+                    Identité visuelle
+                    </option>
+
+                    <option value="print">
+                    Print
+                    </option>
+
+                    <option value="site-ecommerce">
+                    Site e-commerce
+                    </option>
+
+                    <option value="communication">
+                    Campagne de communication
+                    </option>
+
+                    <option value="strategie">
+                    Conseil et stratégie
+                    </option>
+
+                    <option value="autre">
+                    Autre
+                    </option>
+                </select>
+                </div>
+
+                <div class="contact-field">
+                <label for="budget">Budget estimé</label>
+
+                <select id="budget" name="budget">
+                    <option value="" disabled selected>
+                    Sélectionnez un budget
+                    </option>
+
+                    <option value="moins-de-1000">
+                    Moins de 1 000 €
+                    </option>
+
+                    <option value="1000-3000">
+                    Entre 1 000 € et 3 000 €
+                    </option>
+
+                    <option value="3000-5000">
+                    Entre 3 000 € et 5 000 €
+                    </option>
+
+                    <option value="plus-de-5000">
+                    Plus de 5 000 €
+                    </option>
+
+                    <option value="a-definir">
+                    À définir
+                    </option>
+                </select>
+                </div>
+
+            </div>
+
+            <div class="contact-field contact-field--message">
+                <label for="message">Parlez-moi de votre projet</label>
+
+                <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Votre projet, vos objectifs, vos envies..."
+                required
+                ></textarea>
+            </div>
+
+            <div class="contact-form__bottom">
+
+                <p>
+                En envoyant ce formulaire, vous acceptez d’être recontacté
+                au sujet de votre demande.
+                </p>
+
+                <button type="submit" class="contact-submit">
+                <span>Envoyer la demande</span>
+                <span class="contact-submit__arrow">→</span>
+                </button>
+
+            </div>
+
+            </form>
+
+        </div>
+    </section>
+
+<!-- ======================================
+     FOOTER
+====================================== -->
+
+<footer class="portfolio-footer" id="contact">
+  <div class="footer-container">
+
+    <div class="footer-main">
+
+      <div class="footer-quote">
+        <p>
+          Je conçois des univers visuels qui captivent, racontent et laissent
+          une empreinte.
+        </p>
+      </div>
+
+      <div class="footer-monogram-wrapper">
+        <a href="#" class="footer-monogram" aria-label="Retour à l’accueil">
+          AH
+        </a>
+      </div>
+
+      <div class="footer-links">
+
+        <nav class="footer-column">
+          <span class="footer-column-title">Navigation</span>
+
+          <a href="#projets">Projets</a>
+          <a href="#apropos">À propos</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <nav class="footer-column">
+          <span class="footer-column-title">Réseaux</span>
+
+          <a href="#" target="_blank">LinkedIn</a>
+          <a href="#" target="_blank">Instagram</a>
+          <a href="#" target="_blank">Behance</a>
+        </nav>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <span>
+        © 2026 Abdelkader Hamidi — Tous droits réservés
+      </span>
+
+      <a href="#">Mentions légales</a>
+
+    </div>
+
+  </div>
+</footer>
+
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const burger = document.getElementById("portfolioBurger");
+        const menu = document.getElementById("portfolioNav");
+        const menuLinks = menu.querySelectorAll("a");
+
+        if (!burger || !menu) {
+        console.error("Le bouton burger ou le menu est introuvable.");
+        return;
+        }
+
+        burger.addEventListener("click", function () {
+        const menuEstOuvert = menu.classList.toggle("is-open");
+
+        burger.classList.toggle("is-open", menuEstOuvert);
+        document.body.classList.toggle("menu-open", menuEstOuvert);
+
+        burger.setAttribute("aria-expanded", menuEstOuvert);
+        burger.setAttribute(
+            "aria-label",
+            menuEstOuvert ? "Fermer le menu" : "Ouvrir le menu"
+        );
+        });
+
+        menuLinks.forEach(function (link) {
+        link.addEventListener("click", function () {
+            menu.classList.remove("is-open");
+            burger.classList.remove("is-open");
+            document.body.classList.remove("menu-open");
+
+            burger.setAttribute("aria-expanded", "false");
+            burger.setAttribute("aria-label", "Ouvrir le menu");
+        });
+        });
+    });
+    </script>
+</body>
+</html>

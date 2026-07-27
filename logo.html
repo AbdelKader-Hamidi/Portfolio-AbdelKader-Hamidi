@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Présentation de l’identité visuelle BETCHU." />
+  <title>BETCHU — Brand Book</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="logo-style.css" />
+</head>
+
+<body>
+  <!-- Aucun header : la page commence directement par le hero. -->
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <h1 id="page-title" class="sr-only">BETCHU Brand Book</h1>
+    </section>
+
+    <section class="project-story section-shell" aria-label="Processus créatif BETCHU">
+      <article class="story-row story-row--image-left reveal">
+        <figure class="visual-frame visual-frame--portrait">
+          <img
+            src="img/Logo/sabrina.png"
+            alt="Silhouette portant une veste BETCHU dans une ambiance urbaine nocturne"
+          />
+        </figure>
+
+        <div class="story-copy">
+          <p class="story-number">01.</p>
+          <h2>Identité</h2>
+          <p>
+            BETCHŪ est une marque de lunettes pensée pour celles et ceux qui souhaitent affirmer leur personnalité à travers des montures uniques.
+          </p>
+          <p>
+            Des lunettes esthétiques, confortables et personnalisables, conçues pour exprimer son style au quotidien sans faire de compromis.
+          </p>
+        </div>
+      </article>
+
+      <article class="story-row story-row--image-right reveal">
+        <div class="story-copy">
+          <p class="story-number">02.</p>
+          <h2>Recherche</h2>
+          <p>
+            Exploration de l’univers de la lunette de créateur, entre formes singulières, lignes graphiques et possibilités de personnalisation.
+          </p>
+          <p>
+            L’équilibre entre caractère et précision, élégance et expression personnelle.
+          </p>
+        </div>
+
+        <figure class="visual-frame visual-frame--landscape">
+          <img
+            src="img/Logo/croquis.png"
+            alt="Moodboard noir et blanc autour de la mode urbaine et de BETCHU"
+          />
+        </figure>
+      </article>
+
+      <article class="story-row story-row--image-left reveal">
+        <figure class="visual-frame visual-frame--sketches">
+          <img
+            src="img/Logo/moodboard.png"
+            alt="Carnet de recherches et esquisses du logo BETCHU"
+          />
+        </figure>
+
+        <div class="story-copy">
+          <p class="story-number">03.</p>
+          <h2>Fondation</h2>
+          <p>
+            Des premières esquisses à la création d’un signe distinctif. Une identité qui traduit la précision, le caractère et la liberté de personnaliser chaque monture.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section class="signature-section section-shell reveal" aria-labelledby="signature-title">
+      <p class="eyebrow">04. Signature</p>
+      <h2 id="signature-title" class="sr-only">Signature finale BETCHU</h2>
+      <img
+        class="signature-logo"
+        src="img/Logo/logo.png"
+        alt="Logo signature BETCHU"
+      />
+    </section>
+    <!--
+
+    <section class="brand-system section-shell" aria-label="Déclinaisons de l’identité">
+      <div class="reveal">
+        <p class="eyebrow">05. Déclinaisons</p>
+        <div class="logo-grid">
+          <div class="logo-card logo-card--signature" aria-label="Version principale du logo">
+            <span class="mini-wordmark">BETCHU<sup>✦</sup></span>
+            <span class="swoosh" aria-hidden="true"></span>
+          </div>
+
+          <div class="logo-card logo-card--symbol" aria-label="Symbole BETCHU">
+            <span class="brand-symbol">B</span>
+          </div>
+
+          <div class="logo-card logo-card--text" aria-label="Version typographique du logo">
+            <span class="mini-wordmark">BETCHU<sup>®</sup></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="brand-details reveal">
+        <section class="palette-block" aria-labelledby="palette-title">
+          <p class="eyebrow" id="palette-title">06. Palette</p>
+          <div class="palette" aria-label="Palette noire, gris foncé, taupe et crème">
+            <span style="--swatch:#020202"></span>
+            <span style="--swatch:#22201d"></span>
+            <span style="--swatch:#72675d"></span>
+            <span style="--swatch:#e7dccd"></span>
+          </div>
+        </section>
+
+        <section class="type-block" aria-labelledby="type-title">
+          <p class="eyebrow" id="type-title">07. Typographies</p>
+          <p class="type-name">Cormorant Garamond / Medium</p>
+          <p class="type-name type-name--sans">Montserrat Light / Regular</p>
+          <p class="alphabet serif-sample">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+          <p class="alphabet sans-sample">abcdefghijklmnopqrstuvwxyz</p>
+        </section>
+      </div>
+    </section>
+  </main>
+  -->
+
+  <footer class="site-footer section-shell">
+    <p>© 2026 BETCHU</p>
+    <span class="footer-star" aria-hidden="true">✦</span>
+    <p>Tous droits réservés</p>
+  </footer>
+
+  <script>
+    const revealElements = document.querySelectorAll('.reveal');
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+
+      revealElements.forEach(element => observer.observe(element));
+    } else {
+      revealElements.forEach(element => element.classList.add('is-visible'));
+    }
+  </script>
+</body>
+</html>
